@@ -38,9 +38,47 @@ const Header = () => {
             <li className="nav-item">
               <Link className="nav-link text-dark fw-bold fs-5" to="/about">ABOUT</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link text-dark fw-bold fs-5" to="/work">WORK</Link>
+            <li className="nav-item dropdown">
+              <Link
+                className="nav-link dropdown-toggle text-dark fw-bold fs-5"
+                to="#"
+                id="workDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                SERVICES
+              </Link>
+              <ul className="dropdown-menu" aria-labelledby="workDropdown">
+                <li><Link className="dropdown-item" to="/Newspaper">Classified Ads</Link></li>
+                <li><Link className="dropdown-item" to="/work/print-media">Display Ads</Link></li>
+                <li><Link className="dropdown-item" to="/work/personal-zerox">Ad Print Media</Link></li>
+                <li><Link className="dropdown-item" to="/work/personal-zerox"> Social Media </Link></li>
+                <li><Link className="dropdown-item" to="/work/personal-zerox"> Digital Media </Link></li>
+              </ul>
             </li>
+
+            <li className="nav-item dropdown">
+              <Link
+                className="nav-link dropdown-toggle text-dark fw-bold fs-5"
+                to="#"
+                id="workDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                PROMOTION
+              </Link>
+              <ul className="dropdown-menu" aria-labelledby="workDropdown">
+                <li><Link className="dropdown-item" to="/work/newspaper">Flyers Leaflets  </Link></li>
+                <li><Link className="dropdown-item" to="/work/print-media"> Table Books</Link></li>
+                <li><Link className="dropdown-item" to="/work/personal-zerox"> Calendars</Link></li>
+                <li><Link className="dropdown-item" to="/work/personal-zerox"> Catalogues</Link></li>
+                <li><Link className="dropdown-item" to="/work/personal-zerox"> Ad & Short Films </Link></li>
+
+              </ul>
+            </li>
+
             <li className="nav-item">
               <Link className="nav-link text-dark fw-bold fs-5" to="/contact">CONTACT</Link>
             </li>
@@ -49,8 +87,7 @@ const Header = () => {
 
         {/* Contact Buttons - only visible on large screens */}
         <div className="d-none d-lg-flex gap-2">
-          <button className="btn btn-outline-dark fw-semibold">9921177816</button>
-          <button className="btn btn-outline-dark fw-semibold">9422086762</button>
+          <button className="btn btn-outline-dark fw-semibold">+91 9921177816 / 9422086762</button>
         </div>
       </div>
     </nav>
