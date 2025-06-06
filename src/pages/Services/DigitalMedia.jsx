@@ -1,0 +1,14 @@
+
+const DigitalMedia = () => {
+
+    return (
+        <>
+
+            <div className="container-fluid" id="DigitalMedia">
+                <h1>DigitalMedia</h1>
+            </div>
+
+        </>
+    )
+}
+export default DigitalMedia;

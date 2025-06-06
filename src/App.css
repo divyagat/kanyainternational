@@ -3,3 +3,17 @@
   margin-top: 0;
 }
 
+/* Properly show/hide dropdowns on hover */
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  margin-top: 0;
+}
+
+.dropdown:hover .dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  position: absolute;
+}
+
