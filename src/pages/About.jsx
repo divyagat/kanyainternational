@@ -213,38 +213,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* About Services */}
-      <div className="container-fluid mt-5 px-4">
-        <div className="row align-items-center">
-          <div className="col-md-6" data-aos="fade-right">
-            <h2>About Services</h2>
-            <p>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-
-              Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia.
-              Donec ullamcorper nulla non metus auctor fringilla.
-              Donec ullamcorper nulla non metus auctor fringilla. Aenean eu leo quam. Pellentesque ornare sem lacinia quam</p>
-          </div>
-          <div className="col-md-6 text-center  bg-dark" data-aos="fade-left">
-            <ul>
-              <li><h3>Ornare Quam Justo Tellusv</h3>
-                <p>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. 
-                  Aenean lacinia. </p>
-              </li>
-               <li><h3>Ornare Quam Justo Tellusv</h3>
-                <p>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. 
-                  Aenean lacinia. </p>
-              </li>
-               <li><h3>Ornare Quam Justo Tellusv</h3>
-                <p>Maecenas faucibus mollis interdum. Donec id elit non mi porta gravida at eget metus. 
-                  Aenean lacinia. </p>
-              </li>
-            </ul>
-
-
-
-          </div>
-        </div>
-      </div>
+     
 
       {/* Why Choose Us */}
       <div className="container py-5 text-center" data-aos="fade-up">
