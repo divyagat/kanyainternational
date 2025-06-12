@@ -1,17 +1,39 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes, FaPhoneAlt } from 'react-icons/fa';
+import React, { useState, useEffect, useRef } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { FaBars, FaTimes, FaPhoneAlt, FaArrowLeft } from 'react-icons/fa';
 
 const Header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const dropdownRef = useRef(null);
+  const navigate = useNavigate();
 
   const toggleNavbar = () => setNavbarOpen(!navbarOpen);
-  const toggleDropdown = (name) => setOpenDropdown(prev => (prev === name ? null : name));
+
+  const toggleDropdown = (name) => {
+    setOpenDropdown(prev => (prev === name ? null : name));
+  };
+
   const handleLinkClick = () => {
     setNavbarOpen(false);
     setOpenDropdown(null);
   };
+
+  const handleBackClick = () => {
+    if (openDropdown) {
+      setOpenDropdown(null);
+    }
+  };
+
+  useEffect(() => {
+    const handleOutsideClick = (e) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        setOpenDropdown(null);
+      }
+    };
+    document.addEventListener('mousedown', handleOutsideClick);
+    return () => document.removeEventListener('mousedown', handleOutsideClick);
+  }, []);
 
   return (
     <>
@@ -21,7 +43,6 @@ const Header = () => {
           min-height: 15vh;
           z-index: 999;
         }
-
         .navbar-nav .nav-link,
         .dropdown-toggle {
           color: #5a2a50 !important;
@@ -30,49 +51,55 @@ const Header = () => {
           cursor: pointer;
           transition: color 0.3s ease-in-out;
         }
-
         .nav-link:hover,
         .dropdown-toggle:hover {
           color: #fff !important;
         }
-
         .dropdown-menu {
-          border-radius: 12px;
+          display: none;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          z-index: 1000;
+          min-width: 12rem;
+          padding: 0.5rem 0;
+          margin-top: 0.125rem;
+          font-size: 1rem;
+          color: #212529;
+          text-align: left;
           background-color: #fff0f5;
-          box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+          border: 1px solid rgba(0, 0, 0, 0.15);
+          border-radius: 0.5rem;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
         }
-
+        .dropdown.show .dropdown-menu {
+          display: block;
+        }
         .dropdown-item {
           color: #5a2a50;
           transition: background 0.3s ease;
         }
-
         .dropdown-item:hover {
           background-color: #f8c8dc;
           color: #000;
           border-radius: 8px;
         }
-
         .btn-outline-dark {
           border-color: #5a2a50;
           color: #5a2a50;
         }
-
         .btn-outline-dark:hover {
           background-color: #5a2a50;
           color: #fff;
         }
-
         .navbar-toggler {
           color: #5a2a50;
         }
-
         .phone-btn {
           background: #5a2a50;
           color: white;
           border-radius: 8px;
         }
-
         .phone-btn:hover {
           background: #803a78;
           color: white;
@@ -83,7 +110,7 @@ const Header = () => {
         <div className="container-fluid px-3 px-md-5 d-flex align-items-center justify-content-between w-100">
 
           {/* Logo */}
-          <Link className="navbar-brand d-flex align-items-center" to="/" style={{ maxWidth: '160px', cursor: 'pointer' }}>
+          <Link className="navbar-brand d-flex align-items-center" to="/" style={{ maxWidth: '160px' }}>
             <img
               src="/KANYA-LOGO-1-300x85.png"
               alt="Kanya Logo"
@@ -92,14 +119,21 @@ const Header = () => {
             />
           </Link>
 
-          {/* Toggler Icon */}
-          <button className="navbar-toggler border-0" type="button" onClick={toggleNavbar} style={{ cursor: 'pointer' }}>
+          {/* Back Button - visible only when dropdown open */}
+          {openDropdown && (
+            <button className="btn btn-sm me-2 d-lg-none" onClick={handleBackClick}>
+              <FaArrowLeft /> Back
+            </button>
+          )}
+
+          {/* Toggle Button */}
+          <button className="navbar-toggler border-0" type="button" onClick={toggleNavbar}>
             {navbarOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
           </button>
 
-          {/* Menu Items */}
-          <div className={`collapse navbar-collapse justify-content-center ${navbarOpen ? 'show' : ''}`}>
-            <ul className="navbar-nav mb-2 mb-lg-0 gap-3 align-items-lg-center text-center text-lg-start">
+          {/* Navbar Links */}
+          <div className={`navbar-collapse justify-content-center ${navbarOpen ? 'd-block' : 'd-none'} d-lg-flex`}>
+            <ul className="navbar-nav mb-2 mb-lg-0 gap-3 text-center text-lg-start" ref={dropdownRef}>
 
               <li className="nav-item">
                 <Link className="nav-link" to="/" onClick={handleLinkClick}>HOME</Link>
@@ -109,32 +143,31 @@ const Header = () => {
                 <Link className="nav-link" to="/about" onClick={handleLinkClick}>ABOUT</Link>
               </li>
 
-              {/* SERVICES Dropdown */}
-              <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle" onClick={() => toggleDropdown('services')}>
-                  SERVICES
-                </span>
+              {/* Services Dropdown */}
+              <li className={`nav-item dropdown position-relative ${openDropdown === 'services' ? 'show' : ''}`}>
+                <span className="nav-link dropdown-toggle" onClick={() => toggleDropdown('services')}>SERVICES</span>
                 <ul className={`dropdown-menu ${openDropdown === 'services' ? 'show' : ''}`}>
-                  <li><Link className="dropdown-item" to="/ClassifiedAds" onClick={handleLinkClick}>Classified Ads</Link></li>
-                  <li><Link className="dropdown-item" to="/DisplayAds" onClick={handleLinkClick}>Display Ads</Link></li>
-                  <li><Link className="dropdown-item" to="/AdprintArea" onClick={handleLinkClick}>Ad Print Area</Link></li>
-                  <li><Link className="dropdown-item" to="/SocialMedia" onClick={handleLinkClick}>Social Media</Link></li>
-                  <li><Link className="dropdown-item" to="/DigitalMedia" onClick={handleLinkClick}>Digital Media</Link></li>
+                  {['ClassifiedAds', 'DisplayAds', 'AdprintArea', 'SocialMedia', 'DigitalMedia'].map((route, i) => (
+                    <li key={i}>
+                      <Link className="dropdown-item" to={`/${route}`} onClick={handleLinkClick}>
+                        {route.replace(/([A-Z])/g, ' $1').trim()}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </li>
 
-              {/* PROMOTION Dropdown */}
-              <li className="nav-item dropdown">
-                <span className="nav-link dropdown-toggle" onClick={() => toggleDropdown('promotion')}>
-                  PROMOTION
-                </span>
+              {/* Promotion Dropdown */}
+              <li className={`nav-item dropdown position-relative ${openDropdown === 'promotion' ? 'show' : ''}`}>
+                <span className="nav-link dropdown-toggle" onClick={() => toggleDropdown('promotion')}>PROMOTION</span>
                 <ul className={`dropdown-menu ${openDropdown === 'promotion' ? 'show' : ''}`}>
-                  <li><Link className="dropdown-item" to="/FlyersLeaflets" onClick={handleLinkClick}>Flyers Leaflets</Link></li>
-                  <li><Link className="dropdown-item" to="/LogoDesigns" onClick={handleLinkClick}>Logo Designs</Link></li>
-                  <li><Link className="dropdown-item" to="/TableBooks" onClick={handleLinkClick}>Table Books</Link></li>
-                  <li><Link className="dropdown-item" to="/Calendars" onClick={handleLinkClick}>Calendars</Link></li>
-                  <li><Link className="dropdown-item" to="/Catalogues" onClick={handleLinkClick}>Catalogues</Link></li>
-                  <li><Link className="dropdown-item" to="/AdShortFilm" onClick={handleLinkClick}>Ad & Short Films</Link></li>
+                  {['FlyersLeaflets', 'LogoDesigns', 'TableBooks', 'Calendars', 'Catalogues', 'AdShortFilm'].map((route, i) => (
+                    <li key={i}>
+                      <Link className="dropdown-item" to={`/${route}`} onClick={handleLinkClick}>
+                        {route.replace(/([A-Z])/g, ' $1').trim()}
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </li>
 
@@ -142,7 +175,7 @@ const Header = () => {
                 <Link className="nav-link" to="/contact" onClick={handleLinkClick}>CONTACT</Link>
               </li>
 
-              {/* Phone (Mobile View) */}
+              {/* Mobile Phone Button */}
               <li className="d-lg-none nav-item mt-3">
                 <a href="tel:+919921177816" className="btn phone-btn w-100">
                   <FaPhoneAlt className="me-2" />
@@ -152,7 +185,7 @@ const Header = () => {
             </ul>
           </div>
 
-          {/* Phone (Desktop Only) */}
+          {/* Desktop Phone Button */}
           <div className="d-none d-lg-flex gap-2">
             <a href="tel:+919921177816" className="btn btn-outline-dark fw-semibold d-flex align-items-center">
               <FaPhoneAlt className="me-2" />
