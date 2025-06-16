@@ -17,10 +17,12 @@
   position: absolute;
 }
 
-#KanyaInternational .cards{
-
-  background-color: rgb(65, 29, 208);
+#KanyaInternational .cards {
+  padding: 50px;
+  background-color: rgb(217, 197, 233);
 }
+
+
 
 #About.about-section {
   background-color: #f9f9f9;
@@ -66,6 +68,7 @@
   height: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
 #About.form-label {
   color: #555;
   font-size: 0.95rem;
@@ -85,34 +88,37 @@
 #About.btn-primary:hover {
   background-color: #507be0;
 }
-#About .Clever{
+
+#About .Clever {
   background-image: url(../public/about2-bg-2.jpg);
- background-position: center;
- background-size: cover;
- width: 100%;
- height: 90vh;
- color: #ccc;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  color: #ccc;
 }
 
-#About .Inceptions{
+#About .Inceptions {
   background-color: #F2F2F2;
   height: 120vh;
 }
-#About .Inceptionsimg{
+
+#About .Inceptionsimg {
   width: 100vh;
   height: 120vh;
 
 }
 
-#About .Inceptionstext h2{
- font-weight: 700;
- font-size: 40px;
+#About .Inceptionstext h2 {
+  font-weight: 700;
+  font-size: 40px;
 }
-#About .Inceptionstext p{
+
+#About .Inceptionstext p {
   color: #929492;
 }
 
-#About .Inceptionstext ul li{
+#About .Inceptionstext ul li {
   list-style: none;
   color: #929492;
 }
@@ -121,6 +127,7 @@
 #About .hover-scale {
   transition: transform 0.3s ease;
 }
+
 #About .hover-scale:hover {
   transform: scale(1.05);
 }
@@ -128,10 +135,12 @@
 #About .hover-fade {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
+
 #About .hover-fade:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
+
 #About .progress-bar {
   animation: fillBar 2s ease-in-out;
 }
@@ -145,10 +154,11 @@
 #AdprintArea .hover-zoom img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
+
 #AdprintArea .hover-zoom img:hover {
   transform: scale(1.05);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-   border-color: #D72638;
+  border-color: #D72638;
 }
 
 #LogoDesigns .hover-zoom img {
@@ -160,6 +170,7 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
   border-color: #003366;
 }
+
 #TableBooks .hover-zoom img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -169,6 +180,7 @@
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
   border-color: #4B2E83;
 }
+
 #Calendars .hover-zoom img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -178,6 +190,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   border-color: #274472;
 }
+
 #Catalogues .hover-zoom img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -187,6 +200,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   border-color: #7C4DFF;
 }
+
 .hover-zoom img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -195,6 +209,7 @@
   transform: scale(1.05);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
+
 #AdShortFilm .hover-zoom img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
@@ -207,20 +222,7 @@
 .dropdown-menu {
   display: none;
 }
+
 .dropdown.show .dropdown-menu {
   display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

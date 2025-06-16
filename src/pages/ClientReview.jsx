@@ -57,7 +57,7 @@ const ClientReview = () => {
       <div className="container-fluid py-5 bg-light" id="KanyaInternational">
         <h2 className="text-center fw-bold mb-4">Our Visiting Cards Design</h2>
         <div
-          className="container cards shadow-lg rounded-4 p-3 text-center"
+          className="container cards shadow-lg rounded-4  text-center"
           data-aos="zoom-in"
         >
           <Slider {...settings}>

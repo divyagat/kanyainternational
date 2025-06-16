@@ -1,6 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useNavigate } from "react-router-dom";
 
 const ContactSection = () => {
+  const navigate = useNavigate();
+
   const sectionStyle = {
     backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('/1-home.jpg')`,
     backgroundSize: "cover",
@@ -51,6 +54,10 @@ const ContactSection = () => {
     e.target.style.boxShadow = "none";
   };
 
+  const handleClick = () => {
+    navigate("/contact");
+  };
+
   return (
     <div style={sectionStyle}>
       <div style={contentStyle} className="text-white">
@@ -66,6 +73,7 @@ const ContactSection = () => {
           style={buttonStyle}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
+          onClick={handleClick}
         >
           Contact Now
         </button>

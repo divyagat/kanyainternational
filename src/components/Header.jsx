@@ -111,6 +111,27 @@ const Header = () => {
 
           {/* Logo */}
           <Link className="navbar-brand d-flex align-items-center" to="/" style={{ maxWidth: '160px' }}>
+
+            <p
+              style={{
+                height: "10px",
+                width: "10px",
+                border: "1px solid black",
+                borderRadius: "50%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                fontWeight: "400",
+                fontSize: "12px",
+                padding: "8px",
+                position: "absolute",
+                left: "200px",
+                top: "15px"
+              }}
+            >
+              R
+            </p>
+
             <img
               src="/KANYA-LOGO-1-300x85.png"
               alt="Kanya Logo"
