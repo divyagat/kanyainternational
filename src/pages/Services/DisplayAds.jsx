@@ -28,7 +28,7 @@ const DisplayAds = () => {
       {/* Hero Section */}
       <div className="container-fluid bg-light py-4" id="DisplayAds">
         <div className="container text-center" data-aos="fade-down">
-          <h1 className="display-5 fw-bold text-primary mb-4">Display Ads</h1>
+          <h1 className=" heighlight display-5 fw-bold  mb-4">Display Ads</h1>
           <img
             src="/dis&classAds.jpeg"
             alt="Main Display"

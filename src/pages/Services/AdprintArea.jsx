@@ -26,7 +26,7 @@ const AdprintArea = () => {
       <div className="container">
         {/* Title */}
         <h1
-          className="text-center mb-3"
+          className=" heighligh text-center mb-3"
           style={{
             fontSize: "3rem",
             fontWeight: "700",

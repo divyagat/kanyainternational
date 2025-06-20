@@ -26,7 +26,7 @@ const ClassifiedAds = () => {
       <div className="container-fluid py-5 bg-light" id="ClassifiedAds">
         {/* Title */}
         <div className="text-center mb-5" data-aos="fade-down">
-          <h1 className="display-5 fw-bold text-danger">Classified Ads</h1>
+          <h1 className="heighlight display-5 fw-bold text-danger">Classified Ads</h1>
           <p className="lead text-muted">Boost your visibility with our premium classified ads</p>
         </div>
 

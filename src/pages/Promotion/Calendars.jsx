@@ -15,15 +15,14 @@ const Calendars = () => {
       id="Calendars"
       style={{ backgroundColor: "#F4F4F4" }}
     >
-      <div className="container">
+      <div className="container" id='Calendars'>
         {/* Title */}
         <h1
-          className="text-center mb-3"
+          className="heighligh text-center mb-3"
           style={{
             fontSize: "3rem",
             fontWeight: "700",
             fontFamily: "'Poppins', sans-serif",
-            color: "#274472",
             letterSpacing: "1.5px",
             textTransform: "uppercase",
           }}

@@ -226,3 +226,285 @@
 .dropdown.show .dropdown-menu {
   display: block;
 }
+
+#Letsconnect {
+  background-image: url(public/contactimg_hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Align to top */
+  padding-top: 20vh;
+  /* Push down a bit from top */
+  text-align: center;
+}
+
+#Letsconnect h1 {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+#ClassifiedAds .heighlight {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#ClassifiedAds h1 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+#DisplayAds .heighlight {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#DisplayAds h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #dc3545;
+}
+
+#AdprintArea .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#AdprintArea h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #dc3545;
+}
+
+#SocialMedia .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#SocialMedia h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #dc3545;
+}
+
+#DigitalMedia .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#DigitalMedia h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #dc3545;
+}
+
+#AdShortFilm .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#AdShortFilm h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #dc3545;
+}
+
+#Calendars .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#Calendars h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #dc3545;
+}
+
+#Catalogues .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#Catalogues h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #dc3545;
+
+}
+
+#TableBooks .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#TableBooks h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #dc3545;
+}
+#LogoDesigns .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#LogoDesigns h1 {
+  margin: 0;
+  font-size: 4rem;
+  color: #dc3545;
+}

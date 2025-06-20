@@ -22,12 +22,11 @@ const Catalogues = () => {
       <div className="container">
         {/* Title */}
         <h1
-          className="text-center mb-4"
+          className="heighligh text-center mb-4"
           style={{
             fontSize: "3rem",
             fontWeight: "700",
             fontFamily: "'Poppins', sans-serif",
-            color: "#7C4DFF",
             letterSpacing: "1.5px",
             textTransform: "uppercase",
           }}

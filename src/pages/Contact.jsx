@@ -36,14 +36,21 @@ const ContactForm = () => {
       <section
         style={{
           background: 'linear-gradient(135deg, #fce3ec, #ffe6fa)',
-          minHeight: '100vh',
+          minHeight: '50vh',
           paddingTop: '50px',
           paddingBottom: '50px',
         }}
       >
-        <h1 className="text-center text-danger fw-bold mb-5" data-aos="zoom-in">
-          Let’s Connect 🤝
-        </h1>
+        <div className="container-fluid" id="Letsconnect">
+          <h1 className="text-center text-danger fw-bold" data-aos="zoom-in">
+            Let’s Connect 🤝
+          </h1>
+        </div>
+
+
+
+
+
 
         <div className="container">
           <div className="row justify-content-center align-items-start" data-aos="fade-up">

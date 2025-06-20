@@ -20,12 +20,11 @@ const LogoDesigns = () => {
       <div className="container">
         {/* Title */}
         <h1
-          className="text-center mb-3"
+          className=" heighligh text-center mb-3"
           style={{
             fontSize: "3rem",
             fontWeight: "700",
             fontFamily: "'Poppins', sans-serif",
-            color: "#003366",
             textTransform: "uppercase",
             letterSpacing: "2px",
           }}

@@ -21,7 +21,7 @@ const AdShortFilm = () => {
     <section className="container-fluid py-5 bg-light" id="AdShortFilm">
       <div className="container text-center mb-5">
         <h1
-          className="display-5 fw-bold"
+          className=" heighligh display-5 fw-bold"
           style={{
             color: "#E91E63",
             fontFamily: "'Poppins', sans-serif",

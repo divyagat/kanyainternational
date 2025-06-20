@@ -5,7 +5,7 @@ const DigitalMedia = () => {
         <>
 
             <div className="container-fluid" id="DigitalMedia">
-                <h1>DigitalMedia</h1>
+                <h1 className="heighligh">DigitalMedia</h1>
             </div>
 
         </>
