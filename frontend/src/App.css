@@ -1,0 +1,522 @@
+*{
+  padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+/* border: 1px solid red; */
+}
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+/* Properly show/hide dropdowns on hover */
+.dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  margin-top: 0;
+}
+
+.dropdown:hover .dropdown-menu.show {
+  display: block;
+  opacity: 1;
+  position: absolute;
+}
+
+#KanyaInternational .cards {
+  padding: 50px;
+  background-color: rgb(217, 197, 233);
+}
+
+
+#About.about-section {
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+#About.about-btn {
+  background-color: #eafff3;
+  color: #00b894;
+  padding: 12px 24px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#About.about-btn:hover {
+  background-color: #d0fff0;
+  color: #009b74;
+  transform: translateY(-2px);
+}
+
+#About.about-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.2;
+}
+
+#About.about-heading .highlight {
+  color: #6294ff;
+}
+
+#About.about-description {
+  font-size: 1.1rem;
+  color: #6c757d;
+}
+
+#About.about-image {
+  border-radius: 24px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+#About.form-label {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+#About.form-control,
+#About.form-select {
+  height: 45px;
+  border: 1px solid #ccc;
+}
+
+#About.btn-primary {
+  background-color: #6294ff;
+  border-color: #6294ff;
+}
+
+#About.btn-primary:hover {
+  background-color: #507be0;
+}
+
+#About .Clever {
+  background-image: url(../public/about2-bg-2.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  color: #ccc;
+}
+
+#About .Inceptions {
+  background-color: #F2F2F2;
+  height: 120vh;
+}
+
+#About .Inceptionsimg {
+  width: 100vh;
+  height: 120vh;
+
+}
+
+#About .Inceptionstext h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+#About .Inceptionstext p {
+  color: #929492;
+}
+
+#About .Inceptionstext ul li {
+  list-style: none;
+  color: #929492;
+}
+
+/* Animation Hover Effects */
+#About .hover-scale {
+  transition: transform 0.3s ease;
+}
+
+#About .hover-scale:hover {
+  transform: scale(1.05);
+}
+
+#About .hover-fade {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#About .hover-fade:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+#About .progress-bar {
+  animation: fillBar 2s ease-in-out;
+}
+
+@keyframes fillBar {
+  0% {
+    width: 0;
+  }
+}
+
+#AdprintArea .hover-zoom img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#AdprintArea .hover-zoom img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-color: #D72638;
+}
+
+#LogoDesigns .hover-zoom img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#LogoDesigns .hover-zoom img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  border-color: #003366;
+}
+
+#TableBooks .hover-zoom img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#TableBooks .hover-zoom img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  border-color: #4B2E83;
+}
+
+#Calendars .hover-zoom img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#Calendars .hover-zoom img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-color: #274472;
+}
+
+#Catalogues .hover-zoom img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#Catalogues .hover-zoom img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-color: #7C4DFF;
+}
+
+.hover-zoom img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hover-zoom img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#AdShortFilm .hover-zoom img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#AdShortFilm .hover-zoom img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.dropdown.show .dropdown-menu {
+  display: block;
+}
+
+#Letsconnect {
+  background-image: url(public/Shaniwarwada3.jpg);
+  padding: 2px ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* Align to top */
+  padding-top: 25vh;
+  /* Push down a bit from top */
+  text-align: center;
+}
+
+#Letsconnect h1 {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+
+
+#ClassifiedAds .heighlight {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#ClassifiedAds h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #dc3545;
+}
+
+#DisplayAds .heighlight {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#DisplayAds h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #dc3545;
+}
+
+#AdprintArea .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#AdprintArea h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #dc3545;
+}
+
+#SocialMedia .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#SocialMedia h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #dc3545;
+}
+
+#DigitalMedia .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#DigitalMedia h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #dc3545;
+}
+
+#AdShortFilm .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#AdShortFilm h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #dc3545;
+}
+
+#Calendars .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#Calendars h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #dc3545;
+}
+
+#Catalogues .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#Catalogues h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #dc3545;
+
+}
+
+#TableBooks .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#TableBooks h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #dc3545;
+}
+#LogoDesigns .heighligh {
+  background: linear-gradient(90deg,
+      rgba(255, 183, 197, 0.4),
+      rgba(255, 223, 186, 0.4),
+      rgba(255, 255, 186, 0.4),
+      rgba(186, 255, 201, 0.4),
+      rgba(186, 225, 255, 0.4),
+      rgba(218, 186, 255, 0.4));
+  width: 100%;
+  height: 25vh;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  text-align: center;
+}
+
+#LogoDesigns h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: #dc3545;
+}
+footer{
+  background-color: #6c686a;
+}
