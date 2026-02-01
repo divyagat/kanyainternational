@@ -51,7 +51,7 @@ const DisplayAds = () => {
           </div>
           <div className="col-lg-4" data-aos="fade-left">
             <img
-              src="public/dads4.jpeg"
+              src="/dads4.jpeg"
               alt="Display Ad 4"
               className="img-fluid rounded shadow hover-zoom"
             />
@@ -82,13 +82,13 @@ const DisplayAds = () => {
       {/* Bottom Full Width and Center Image */}
       <div className="container text-center my-5">
         <img
-          src="public/dads5.jpeg"
+          src="/dads5.jpeg"
           alt="Display Ad 5"
           className="img-fluid rounded shadow w-75 mb-4 hover-zoom"
           data-aos="fade-up"
         />
         <img
-          src="public/dads6.jpeg"
+          src="/dads6.jpeg"
           alt="Display Ad 6"
           className="img-fluid rounded shadow w-75 hover-zoom"
           data-aos="fade-up"

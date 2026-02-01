@@ -146,12 +146,12 @@ const About = () => {
         <h2 className="text-center fw-bold mb-5">Meet The Team</h2>
         <div className="row g-4">
           {[
-            { name: "Jeanette Kingston", role: "CEO", img: "team1.jpg" },
-            { name: "Alan Cooper", role: "Vice President", img: "team2.jpg" },
-            { name: "John Smithy", role: "CFO", img: "team3.jpg" },
-            { name: "Peter Sandler", role: "Engineer", img: "team4.jpg" },
-            { name: "Ricardo Gomez", role: "HR Manager", img: "team5.jpg" },
-            { name: "James Smith", role: "CTO", img: "team6.jpg" },
+            { name: "Jeanette Kingston", role: "CEO", img: "/team1.jpg" },
+            { name: "Alan Cooper", role: "Vice President", img: "/team2.jpg" },
+            { name: "John Smithy", role: "CFO", img: "/team3.jpg" },
+            { name: "Peter Sandler", role: "Engineer", img: "/team4.jpg" },
+            { name: "Ricardo Gomez", role: "HR Manager", img: "/team5.jpg" },
+            { name: "James Smith", role: "CTO", img: "/team6.jpg" },
           ].map((member, index) => (
             <div
               className="col-md-4 col-sm-6"
@@ -180,7 +180,7 @@ const About = () => {
         <div className="row align-items-center">
           <div className="col-md-6" data-aos="fade-right">
             <img
-              src="public/2-about.jpg"
+              src="/2-about.jpg"
               alt="About Us"
               className="img-fluid rounded-4 shadow"
             />
