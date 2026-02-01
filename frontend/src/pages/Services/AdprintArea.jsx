@@ -10,15 +10,15 @@ const AdprintArea = () => {
   }, []);
 
   const images = [
-    "/AdprintCard-1.jpeg",
-    "/AdprintCard-2.jpeg",
-    "/Adprintcard-3.jpeg",
-    "/AdprintCard-4.jpeg",
-    "/AdprintCard-5.jpeg",
-    "/AdprintCard-6.jpeg",
-    "/AdprintCard-7.jpeg",
-    "/AdprintCard-8.jpeg",
-    "/AdprintCard-9.jpeg",
+    "./AdprintCard-1.jpeg",
+    "./AdprintCard-2.jpeg",
+    "./Adprintcard-3.jpeg",
+    "./AdprintCard-4.jpeg",
+    "./AdprintCard-5.jpeg",
+    "./AdprintCard-6.jpeg",
+    "./AdprintCard-7.jpeg",
+    "./AdprintCard-8.jpeg",
+    "./AdprintCard-9.jpeg",
   ];
 
   return (

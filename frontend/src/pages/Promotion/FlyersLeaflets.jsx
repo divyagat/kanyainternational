@@ -5,14 +5,14 @@ const FlyersLeaflets = () => {
     "/Leaflet-1.jpeg",
     "/Leaflet-2.jpeg",
     "/Leaflet-3.jpeg",
-    "/flyers-1.jpeg",
-    "/flyers-2.jpeg",
-    "/flyers-3.jpeg",
-    "/flyers-4.jpeg",
-    "/flyers-5.jpeg",
-    "/flyers-6.jpeg",
-    "/flyers-7.jpeg",
-    "/flyers-8.jpeg",
+    "./flyers-1.jpeg",
+    "./flyers-2.jpeg",
+    "./flyers-3.jpeg",
+    "./flyers-4.jpeg",
+    "./flyers-5.jpeg",
+    "./flyers-6.jpeg",
+    "./flyers-7.jpeg",
+    "./flyers-8.jpeg",
   ];
 
   return (
